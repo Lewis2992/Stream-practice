@@ -1,13 +1,13 @@
-const initState = {
-	isSignedIn: false,
+const stateObj = {
+	isSignedIn: null,
 };
 
-const authReducer = (state = initState, action) => {
+const authReducer = (state = stateObj, action) => {
 	switch (action.type) {
 		case 'SIGN_IN':
 			return {...state, isSignedIn: true, userToken: action.payload};
 		case 'SIGN_OUT':
-			return {initState};
+			return {stateObj};
 		default:
 			return state;
 	}

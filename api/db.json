@@ -1,0 +1,34 @@
+{
+  "streams": [
+    {
+      "stream_name": "Ep1",
+      "stream_desc": "My first stream",
+      "userId": "111576652292097962821",
+      "id": 1
+    },
+    {
+      "stream_name": "Ep 2",
+      "stream_desc": "Another stream",
+      "userId": "111576652292097962821",
+      "id": 2
+    },
+    {
+      "stream_name": "Ep 3",
+      "stream_desc": "My 3rd stream",
+      "userId": "111576652292097962821",
+      "id": 3
+    },
+    {
+      "stream_name": "Ep 4",
+      "stream_desc": "My 4th stream",
+      "userId": "111576652292097962821",
+      "id": 4
+    },
+    {
+      "stream_name": "Ep somethin",
+      "stream_desc": "some desc",
+      "userId": "111576652292097962821",
+      "id": 5
+    }
+  ]
+}

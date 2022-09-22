@@ -1,0 +1,17 @@
+.streamlist {
+	padding: .7rem 10rem;
+}
+
+.stream {
+	margin-bottom: 2rem;
+	border-bottom: 1px solid grey;
+
+	&__name {
+		font-size: 2.5rem;
+		padding-bottom: 1rem;
+	}
+
+	&__desc {
+
+	}
+}
