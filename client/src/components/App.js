@@ -9,16 +9,14 @@ import StreamList from './stream/StreamList';
 import StreamShow from './stream/StreamShow';
 
 const App = () => {
-				const params = useParams();
-	console.log(params);
 	return (
 		<div>
 			<BrowserRouter>
 			<Header/>
 				<Routes>
 					<Route path="/" element={<StreamList/>}/>
-					<Route path="/streams/new" element={<StreamCreate/>}/>
-					<Route path="/streams/edit/:id" element={<StreamEdit params={params}/>}/>
+					{/*<Route path="/streams/new" element={<StreamCreate/>}/>*/}
+					<Route path="/streams/edit/:id" element={<StreamEdit/>}/>
 					<Route path="/streams/delete" element={<StreamDelete/>}/>
 					<Route path="/streams/show" element={<StreamShow/>}/>
 				</Routes>

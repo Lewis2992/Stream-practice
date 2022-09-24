@@ -9,9 +9,12 @@ class GoogleAuth extends React.Component {
 		const handleCredentialResponse = (response) => {
 	        const token = jwt_decode(response.credential);
 	        this.props.signIn(token);
+
 	        document.getElementById('buttonDiv').hidden = true;
 	    }
 
+	    	if (this.props.auth?.isSignedIn) return;
+	    	console.log(this.props);
         window.onload = function() {
           window.google.accounts.id.initialize({
             client_id: "289281937373-m6knc4vpvhk51anaku6r9smjg36nicsd.apps.googleusercontent.com",
@@ -45,6 +48,7 @@ class GoogleAuth extends React.Component {
 	}
 
 	render() {
+
 		return (
 			<div>
 				<div id="buttonDiv"></div> 
