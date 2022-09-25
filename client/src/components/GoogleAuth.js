@@ -14,7 +14,6 @@ class GoogleAuth extends React.Component {
 	    }
 
 	    	if (this.props.auth?.isSignedIn) return;
-	    	console.log(this.props);
         window.onload = function() {
           window.google.accounts.id.initialize({
             client_id: "289281937373-m6knc4vpvhk51anaku6r9smjg36nicsd.apps.googleusercontent.com",

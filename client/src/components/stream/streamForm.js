@@ -30,7 +30,7 @@ const StreamForm = props => {
 						</div>
 						<button type="submit">Submit</button>
 					</form>
-				)
+				);
 			}}
 		</Form>
 	);

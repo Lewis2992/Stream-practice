@@ -16,7 +16,6 @@ export const signOut = () => {
 export const createStream = (formValues) => {
 	return async (dispatch, getState) => {
 		const {sub} = getState()?.auth?.userToken;
-		console.log(sub);
 		const res = await streams.post('/streams', {...formValues, userId: sub})
 
 		dispatch({
@@ -54,7 +53,7 @@ export const fetchStream = (id) => {
 
 export const editStream = (id, formValues) => {
 	return async (dispatch) => {
-		const res = await streams.put(`/streams/${id}`, formValues);
+		const res = await streams.patch(`/streams/${id}`, formValues);
 
 		dispatch({
 			type: 'EDIT_STREAM',
