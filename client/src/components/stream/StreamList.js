@@ -16,6 +16,7 @@ const StreamList = (props) => {
 			return (
 				<div>
 					<Link to={`/streams/edit/${stream.id}`} className="btn">Edit</Link>
+					<Link to={`/streams/delete/${stream.id}`} className="btn">Delete</Link>
 				</div>
 			);
 		}
@@ -32,6 +33,8 @@ const StreamList = (props) => {
 			);
 		});
 	};
+
+	console.log(props.streams);
 
 	return (
 		<div className="streamlist">

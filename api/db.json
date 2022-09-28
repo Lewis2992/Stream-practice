@@ -1,21 +1,3 @@
 {
-  "streams": [
-    {
-      "stream_name": "Ep 1",
-      "stream_desc": "My first stream",
-      "userId": "111576652292097962821",
-      "id": 1
-    },
-    {
-      "stream_name": "Ep 2 (edit)",
-      "stream_desc": "Another stream",
-      "id": 2
-    },
-    {
-      "stream_name": "Ep 3 (v2)",
-      "stream_desc": "My last stream updated",
-      "userId": "111576652292097962821",
-      "id": 3
-    }
-  ]
+  "streams": []
 }

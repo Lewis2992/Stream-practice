@@ -10,6 +10,7 @@ import {PersistGate} from 'redux-persist/integration/react';
 
 import reducers from './reducers';
 import App from './components/App';
+import Header from './components/Header';
 import './styles/main.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,12 +26,14 @@ const persistedReducer = persistReducer(persistConfig, reducers)
 
 const store = createStore(persistedReducer, composeEnhancers(applyMiddleware(thunk)));
 
-const persistor = persistStore(store)
+const persistor = persistStore(store);
 
 root.render(
 	<Provider store={store}>
 		<PersistGate loading={null} persistor={persistor}>
-			<App/>
+			<App>
+				<Header persistor={persistor}/>
+			</App>
 		</PersistGate>
 	</Provider>
 );
