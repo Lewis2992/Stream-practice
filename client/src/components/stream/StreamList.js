@@ -26,15 +26,15 @@ const StreamList = (props) => {
 		return props.streams.map((stream) => {
 			return (
 				<div key={stream.id} className="stream">
-					<h2 className="stream__name">{stream.stream_name}</h2>
+					<Link to={`/streams/${stream.id}`}>
+						<h2 className="stream__name">{stream.stream_name}</h2>
+					</Link>
 					<h3 className="stream__desc">{stream.stream_desc}</h3>
 					{renderAdmin(stream)}
 				</div>
 			);
 		});
 	};
-
-	console.log(props.streams);
 
 	return (
 		<div className="streamlist">
